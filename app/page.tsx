@@ -1,26 +1,26 @@
-'use client';
+"use client";
 
-import { useRef } from 'react';
-import { useScroll } from 'framer-motion';
-import GlassHeader from '@/components/GlassHeader';
-import EmergencyAlert from '@/components/EmergencyAlert';
-import GlassScrollCanvas from '@/components/GlassScrollCanvas';
-import ServiceGlassOverlay from '@/components/ServiceGlassOverlay';
-import GlassServiceGrid from '@/components/GlassServiceGrid';
-import InsuranceGlassPanel from '@/components/InsuranceGlassPanel';
-import TestimonialGlassCards from '@/components/TestimonialGlassCards';
-import ContactGlassForm from '@/components/ContactGlassForm';
-import GlassFooter from '@/components/GlassFooter';
+import { useRef } from "react";
+import { useScroll } from "framer-motion";
+import GlassHeader from "@/components/GlassHeader";
+import EmergencyAlert from "@/components/EmergencyAlert";
+import GlassScrollCanvas from "@/components/GlassScrollCanvas";
+import ServiceGlassOverlay from "@/components/ServiceGlassOverlay";
+import GlassServiceGrid from "@/components/GlassServiceGrid";
+import InsuranceGlassPanel from "@/components/InsuranceGlassPanel";
+import TestimonialGlassCards from "@/components/TestimonialGlassCards";
+import ContactGlassForm from "@/components/ContactGlassForm";
+import GlassFooter from "@/components/GlassFooter";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"]
+    offset: ["start start", "end end"],
   });
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#ccfbf1] via-[#e0f2fe] to-[#f3e8ff] relative overflow-hidden text-slate-900">
+    <main className="min-h-screen bg-gradient-to-br from-[#ccfbf1] via-[#e0f2fe] to-[#f3e8ff] relative text-slate-900">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-[800px] h-[800px] bg-teal-200/40 rounded-full mix-blend-multiply filter blur-[100px] animate-blob"></div>
